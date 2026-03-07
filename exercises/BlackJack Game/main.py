@@ -33,6 +33,7 @@ while wanna_continue:
                     another_card = input(f"Your hand:{players_hand}, current score: {player_total} \nComputer's first card:{computers_hand}\nType 'y' to get another card, type 'n' to pass:")
                 elif player_total == 21:
                     print(f"\nYour hand:{players_hand}, final score: {player_total} \nComputer's final hand:{computers_hand}, final score: {computer_total}\nYou win.\U0001fae3")
+                    another_card = 'n'
         if player_total < 21:
             computers_hand.append(random.choice(cards))
             computer_total = sum(computers_hand)
