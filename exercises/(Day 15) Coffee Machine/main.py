@@ -23,7 +23,7 @@ def get_order(given_order):
             if given_money >= data.MENU[f'{given_order}']['cost']:
                 given_money -= data.MENU[f'{given_order}']['cost']
                 given_money = round(given_money, 2)
-                print(f"Here is ${given_money} in change.\nHere is your {given_order}, enjoy.")
+                print(f"Here is ${given_money} in change.\nHere is your {given_order} \u2615, enjoy.")
                 data.resources['water'] -= data.MENU[f'{given_order}']['ingredients']['water']
                 data.resources['milk'] -= data.MENU[f'{given_order}']['ingredients']['milk']
                 data.resources['coffee'] -= data.MENU[f'{given_order}']['ingredients']['coffee']
